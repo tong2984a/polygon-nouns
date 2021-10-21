@@ -90,7 +90,7 @@ export default function Home() {
         text: noun.text
       }
       if (!item.sold) {items.push(item)}
-      setPrice(item.price)
+      setPrice(item.price + 1)
     })
     setNfts(items)
     setLoadingState('loaded')
